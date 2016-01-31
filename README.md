@@ -21,4 +21,4 @@ You can use the `token_keystroke` function to generate keystrokes for a generate
         token_keystroke("token_github")
     end)
     
-The first time you try this, OSX will ask permission for `security` to access your Keychain. 
+The first time you try this, OSX will ask permission for `security` to access your Keychain. After that, when you press <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>G</kbd>, the current token value will be typed.
