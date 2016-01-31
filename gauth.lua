@@ -1,24 +1,35 @@
--- modified version of https://github.com/imzyxwvu/lua-gauth/blob/master/gauth.lua 
--- uses internal binary and operator and basexx module for Base32
+-- modified version of https://github.com/teunvink/hammerspoon/blob/master/gauth.lua:
+--   uses internal binary AND operator 
+--   uses Hammerspoon's hs.hash.hmacSHA1 instead of a separate sha1 library
 
-local sha1 = require "sha1"
 local basexx = require "basexx"
 
+-- binary AND operator
 local band = function(a, b)
     return a & b
 end
 
+
+-- convert a hex string to binary string
+local function hex_to_binary(hex)
+  return hex:gsub('..', function(hexval)
+    return string.char(tonumber(hexval, 16))
+  end)
+end
+
+
 local GAuth = {}
 
+
 function GAuth.GenCode(skey, value)
-    skey = basexx.from_base32(skey)
-    value = string.char(
+    local skey = basexx.from_base32(skey)
+    local value = string.char(
         0, 0, 0, 0,
         band(value, 0xFF000000) / 0x1000000,
         band(value, 0xFF0000) / 0x10000,
         band(value, 0xFF00) / 0x100,
         band(value, 0xFF))
-    local hash = sha1.hmac_binary(skey, value)
+    local hash = hex_to_binary(hs.hash.hmacSHA1(skey, value))
     local offset = band(hash:sub(-1):byte(1, 1), 0xF)
     local function bytesToInt(a,b,c,d)
         return a*0x1000000 + b*0x10000 + c*0x100 + d

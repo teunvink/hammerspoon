@@ -17,8 +17,8 @@ end
 
 -- read a token seed from keychain, generate a code and make keystrokes for it
 function token_keystroke(token_name)
-    token = password_from_keychain(token_name)
-    hash = gauth.GenCode(token, math.floor(os.time() / 30))
+    local token = password_from_keychain(token_name)
+    local hash = gauth.GenCode(token, math.floor(os.time() / 30))
 
     -- generate keystrokes for the result
     for c in ("%06d"):format(hash):gmatch"." do
