@@ -12,10 +12,10 @@ The `token.lua` module requires the following modules, which are also included i
 
 ####Prerequisites:####
 - Open Keychain and select the `login` chain
-- Create a new password, store a Google Authenticator token seed
+- Create a new password, store a Google Authenticator token seed (a 16-byte string)
 
 ####Usage:####
-You can use the `token_keystroke` function to generate keystrokes for a generated token generated with a specific seed. In the example below, `token_github` is the name of the password in the login keychain.
+`token.lua` provides the `token_keystroke` function to generate keystrokes for a generated token generated with a specific seed. In the example below, `token_github` is the name of the password in the login keychain.
 
     -- Cmd-Alt-G - type Github token  
     hs.hotkey.bind({"cmd", "alt"}, "G", function()
