@@ -21,8 +21,6 @@ function token_keystroke(token_name)
     local hash = gauth.GenCode(token, math.floor(os.time() / 30))
 
     -- generate keystrokes for the result
-    for c in ("%06d"):format(hash):gmatch"." do
-        hs.eventtap.keyStroke({},c)
-    end
+    hs.eventtap.keyStrokes(("%06d"):format(hash))
 end
 
