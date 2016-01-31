@@ -1,4 +1,4 @@
--- modified version of https://github.com/kikito/sha.lua
+-- modified version of https://github.com/imzyxwvu/lua-gauth/blob/master/gauth.lua 
 -- uses internal binary and operator and basexx module for Base32
 
 local sha1 = require "sha1"
