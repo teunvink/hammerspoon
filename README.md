@@ -6,7 +6,7 @@ This script retrieves a [Google authenticator](https://github.com/google/google-
 
 ####Requirements: ####
 The `token.lua` module requires the following modules, which are also included in this repository:
-- [`gauth.lua`](https://github.com/teunvink/hammerspoon/blob/master/gauth.lua) - a slightly modified version of `gauth.lua`  by [imzyxwvu](https://github.com/imzyxwvu/lua-gauth) to work with Lua 5.3 and use `basexx`
+- [`gauth.lua`](https://github.com/teunvink/hammerspoon/blob/master/gauth.lua) - a slightly modified version of `gauth.lua`  by [imzyxwvu](https://github.com/imzyxwvu/lua-gauth) to work with Lua 5.3 and use `basexx` and `hs.hash`
 - [`basexx.lua`](https://github.com/teunvink/hammerspoon/blob/master/basexx.lua) - original code by [aiq](https://github.com/aiq/basexx)
 
 ####Prerequisites:####
