@@ -54,6 +54,6 @@ The menu includes two items "Nu op TV" and "Straks op TV" showing the shows curr
 ### TODO's:###
 - proper error handling
 - more emoji's?
-- 
+
 ## utils.lua ##
 A small collection of useful functions written by me and found on the internet.
