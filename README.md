@@ -43,3 +43,6 @@ The first time you launch the script the list of favorite channels is empty, so 
 By clicking on a tvshow you can set a popup alert for the start of the show. If "Alarmgeluid" is on, a sound will be played as well. A list of all alerts set is available in the menu as well. Clicking on the name of a show for which an alert was set disables the alert.
 
 The menu includes two items "Nu op TV" and "Straks op TV" showing the shows currently playing and up next for all your favorite channels.
+
+### Screenshot:###
+![tvmenu.lua screenshot](https://raw.githubusercontent.com/teunvink/hammerspoon/master/images/tvmenu.png "Screenshot")
