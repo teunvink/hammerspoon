@@ -46,3 +46,6 @@ The menu includes two items "Nu op TV" and "Straks op TV" showing the shows curr
 
 ### Screenshot:###
 ![tvmenu.lua screenshot](https://raw.githubusercontent.com/teunvink/hammerspoon/master/images/tvmenu.png "Screenshot")
+
+### TODO's:###
+- proper error handling
