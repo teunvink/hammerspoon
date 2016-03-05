@@ -1,5 +1,9 @@
 # hammerspoon
-This is a collection of my [Hammerspoon](http://hammerspoon.org) scripts.
+This is a collection of my [Hammerspoon](http://hammerspoon.org) scripts. Currently containing:
+* `token.lua` - calculate a Google authenticator token value and generate keystrokes for it. Use OSX Keychain to store the token seed.
+* `tvmenu.lua` - a menubar showing a TV guide for (mostly) Dutch channels
+
+More details can be found below.
 
 ## token.lua
 This script retrieves a [Google authenticator](https://github.com/google/google-authenticator) token seed from OSX's [Keychain](https://en.wikipedia.org/wiki/Keychain_%28software%29), generates keystrokes for the current TOTP token. This way you can enter TOTP tokens without having to remove your hands from the keyboard. OSX' Keychain is used for safe storage of the token seed.
