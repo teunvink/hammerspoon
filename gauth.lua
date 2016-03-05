@@ -1,3 +1,6 @@
+-- gauth.lua - do google authenticator calculation
+-- written by Teun Vink <github@teun.tv>
+--
 -- modified version of https://github.com/teunvink/hammerspoon/blob/master/gauth.lua:
 --   uses internal binary AND operator 
 --   uses Hammerspoon's hs.hash.hmacSHA1 instead of a separate sha1 library

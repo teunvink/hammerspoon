@@ -1,6 +1,11 @@
+-- token.lua - generate google authenticator token value keystrokes
+-- written by Teun Vink <github@teun.tv>
+--
+-- Retrieve a google authenticator token seed from keychain and use this to calculate the current value
+-- Simulate keystrokes for this token value
+
 local gauth = require "gauth"
 
--- written by Teun Vink <github@teun.tv>
 -- code is based on:
 --   https://github.com/imzyxwvu/lua-gauth/blob/master/gauth.lua (with small modifications)
 --   https://github.com/kikito/sha.lua
