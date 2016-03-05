@@ -1,5 +1,6 @@
 -- gauth.lua - do google authenticator calculation
 -- written by Teun Vink <github@teun.tv>
+-- https://github.com/teunvink/hammerspoon
 --
 -- modified version of https://github.com/teunvink/hammerspoon/blob/master/gauth.lua:
 --   uses internal binary AND operator 

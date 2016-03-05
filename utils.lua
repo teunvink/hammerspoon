@@ -1,6 +1,7 @@
 -- various functions for common tasks
 -- mostly taken from the interwebs
-
+-- collected by Teun Vink <github@teun.tv>
+-- https://github.com/teunvink/hammerspoon
 
 -- taken from https://coronalabs.com/blog/2014/09/02/tutorial-printing-table-contents/
 function print_r(t)  

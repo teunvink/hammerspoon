@@ -1,5 +1,6 @@
 -- tvmenubar.lua - generate a OSX menu item showing Dutch TV guide information
 -- written by Teun Vink <github@teun.tv>
+-- https://github.com/teunvink/hammerspoon
 --
 -- this module uses the tvgids.nl API to retrieve the TV guide for most Dutch channels
 -- upcoming programs for favorite channels are shown, as well as a list of

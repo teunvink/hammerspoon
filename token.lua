@@ -1,5 +1,6 @@
 -- token.lua - generate google authenticator token value keystrokes
 -- written by Teun Vink <github@teun.tv>
+-- https://github.com/teunvink/hammerspoon
 --
 -- Retrieve a google authenticator token seed from keychain and use this to calculate the current value
 -- Simulate keystrokes for this token value

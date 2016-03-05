@@ -22,3 +22,24 @@ The `token.lua` module requires the following modules, which are also included i
     end)
     
 The first time you try this, OSX will ask permission for `security` to access your Keychain. After that, when you press <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>G</kbd>, the current token value will be typed.
+
+##tvmenu.lua##
+Add a program guide for Dutch tv channels to the menubar. This script uses the [tvgids.nl API](https://tvgids.nl). Since it's aimed at Dutch users, all user interaction is in Dutch.
+
+###Features:###
+- show favorite channels in the menu
+- save a list of favorite channels
+- alert (popup and sound) of the start of a program
+- show currently playing and upcoming programs
+- use emoji's to indicate the program type
+
+###Usage:###
+Just include the script in your `init.lua`:
+
+    require "tvmenu"
+
+The first time you launch the script the list of favorite channels is empty, so click on "Kanaal toevoegen" and pick a channel from the list. It will then be added at the top of the menu, and all scheduled tvshows starting with the one currently playing are shown in that menu.
+
+By clicking on a tvshow you can set a popup alert for the start of the show. If "Alarmgeluid" is on, a sound will be played as well. A list of all alerts set is available in the menu as well. Clicking on the name of a show for which an alert was set disables the alert.
+
+The menu includes two items "Nu op TV" and "Straks op TV" showing the shows currently playing and up next for all your favorite channels.
