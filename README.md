@@ -42,7 +42,7 @@ Just include the script in your `init.lua`:
 
     require "tvmenu"
 
-The first time you launch the script the list of favorite channels is empty, so click on "Kanaal toevoegen" and pick a channel from the list. It will then be added at the top of the menu, and all scheduled tvshows starting with the one currently playing are shown in that menu.
+The first time you launch the script the list of favorite channels is empty, so click on "Kanaal toevoegen" and pick a channel from the list. It will then be added at the top of the menu, and all scheduled tvshows starting with the one currently playing are shown in that menu. This script will save a file called `tvmenu_channels.conf` in your hammerspoon directory (typically `~/.hammerspoon`) to store which channels are marked as favorite.
 
 By clicking on a tvshow you can set a popup alert for the start of the show. If "Alarmgeluid" is on, a sound will be played as well. A list of all alerts set is available in the menu as well. Clicking on the name of a show for which an alert was set disables the alert.
 
