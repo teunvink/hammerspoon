@@ -8,16 +8,16 @@ More details can be found below.
 ## token.lua
 This script retrieves a [Google authenticator](https://github.com/google/google-authenticator) token seed from OSX's [Keychain](https://en.wikipedia.org/wiki/Keychain_%28software%29), generates keystrokes for the current TOTP token. This way you can enter TOTP tokens without having to remove your hands from the keyboard. OSX' Keychain is used for safe storage of the token seed.
 
-####Requirements: ####
+#### Requirements: ####
 The `token.lua` module requires the following modules, which are also included in this repository:
 - [`gauth.lua`](https://github.com/teunvink/hammerspoon/blob/master/gauth.lua) - a slightly modified version of `gauth.lua`  by [imzyxwvu](https://github.com/imzyxwvu/lua-gauth) to work with Lua 5.3 and use `basexx` and `hs.hash`
 - [`basexx.lua`](https://github.com/teunvink/hammerspoon/blob/master/basexx.lua) - original code by [aiq](https://github.com/aiq/basexx)
 
-####Prerequisites:####
+#### Prerequisites: ####
 - Open Keychain and select the `login` chain
 - Create a new password, store a Google Authenticator token seed (a 16-byte string)
 
-####Usage:####
+#### Usage: ####
 `token.lua` provides the `token_keystroke` function to generate keystrokes for a generated token generated with a specific seed. In the example below, argument `token_github` is the name of the password stored in the login keychain.
 
     -- Cmd-Alt-G - type Github token  
@@ -27,17 +27,17 @@ The `token.lua` module requires the following modules, which are also included i
     
 The first time you try this, OSX will ask permission for `security` to access your Keychain. After that, when you press <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>G</kbd>, the current token value will be typed.
 
-##tvmenu.lua##
+## tvmenu.lua ##
 Add a program guide for Dutch tv channels to the menubar. This script uses the [tvgids.nl API](https://tvgids.nl). Since it's aimed at Dutch users, all user interaction is in Dutch.
 
-###Features:###
+### Features: ###
 - show favorite channels in the menu
 - save a list of favorite channels
 - alert (popup and sound) of the start of a program
 - show currently playing and upcoming programs
 - use emoji's to indicate the program type
 
-###Usage:###
+### Usage: ###
 Just include the script in your `init.lua`:
 
     require "tvmenu"
@@ -48,10 +48,10 @@ By clicking on a tvshow you can set a popup alert for the start of the show. If 
 
 The menu includes two items "Nu op TV" and "Straks op TV" showing the shows currently playing and up next for all your favorite channels.
 
-### Screenshot:###
+### Screenshot: ###
 ![tvmenu.lua screenshot](https://raw.githubusercontent.com/teunvink/hammerspoon/master/images/tvmenu.png "Screenshot")
 
-### TODO's:###
+### TODO's: ###
 - proper error handling
 - more emoji's?
 
