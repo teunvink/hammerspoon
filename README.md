@@ -55,5 +55,8 @@ The menu includes two items "Nu op TV" and "Straks op TV" showing the shows curr
 - proper error handling
 - more emoji's?
 
+## kink.lua ##
+Show the song playing on KINK's (http://kink.nl) livestream when you press <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>K</kbd>.
+
 ## utils.lua ##
 A small collection of useful functions written by me and found on the internet.
