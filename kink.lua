@@ -1,0 +1,5 @@
+  hs.hotkey.bind({"cmd", "alt"}, "k", function()
+    local res, body, headers = hs.http.get("https://api.kink.nl/static/now-playing.json", nil)
+    local nowplaying = hs.json.decode(body)
+    hs.alert("🎵 Now playing on KINK: " .. nowplaying["playing"] .. " 🎵", 5) 
+  end)
